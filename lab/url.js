@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 const lab = {
   version: "main",
@@ -10,7 +11,19 @@ const repo = {
   branch: "main",
 };
 
-const all_data_names = fs.readdirSync("data");
+const all_data_paths = fs
+  .readdirSync("data")
+  .toSorted()
+  .reduce(
+    (prev, folder) => ({
+      ...prev,
+      [folder]: fs
+        .readdirSync(path.join("data", folder))
+        .toSorted()
+        .filter((name) => path.extname(name) !== ".txt"),
+    }),
+    {},
+  );
 
 console.log(
   `https://lab.climet.eu/${lab.version}/lab/index.html?fromURL=` +
@@ -27,10 +40,11 @@ import pyodide_fs_mount_http
 
 data = Path("data")
 
-pyodide_fs_mount_http.mount_http_files(data, {
-    name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/heads/${repo.branch}/data/{name}"
-    for name in ${JSON.stringify(all_data_names)}
-})
+for folder, files in ${JSON.stringify(all_data_paths)}.items():
+    pyodide_fs_mount_http.mount_http_files(data / folder, {
+        name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/heads/${repo.branch}/data/{name}"
+        for name in files
+    })
 `,
       }),
     ),

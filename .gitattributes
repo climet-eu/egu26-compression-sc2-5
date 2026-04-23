@@ -1,0 +1,11 @@
+data/NextGEMS_regridded_pr_025deg_steps_44_45.nc filter=lfs diff=lfs merge=lfs -text
+data/OpenIFS_pl_regridded_q_025deg_steps_114_120_levels_100_1000.nc filter=lfs diff=lfs merge=lfs -text
+data/HOAPS_2020-08_6-hourly.nc filter=lfs diff=lfs merge=lfs -text
+data/ICONXPP_regridded_t_025deg_steps_2026-05_06.nc filter=lfs diff=lfs merge=lfs -text
+data/NextGEMS_regridded_hus_025deg_steps_44_45.nc filter=lfs diff=lfs merge=lfs -text
+data/OpenIFS_sfc_regridded_t_025deg_steps_114_120.nc filter=lfs diff=lfs merge=lfs -text
+data/OpenIFS_sfc_regridded_tp_025deg_steps_114_120.nc filter=lfs diff=lfs merge=lfs -text
+data/hplp_ml_regridded_q_025deg_levels_10_137_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text
+data/hplp_sfc_regridded_t_025deg_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text
+data/hplp_sfc_regridded_tp_025deg_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text
+data/ICONXPP_regridded_tp_025deg_steps_2026-05_06.nc filter=lfs diff=lfs merge=lfs -text

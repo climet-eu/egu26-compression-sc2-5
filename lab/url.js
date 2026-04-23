@@ -1,5 +1,5 @@
 console.log(
-  "https://lab.climet.eu/main/github/climet-eu/egu26-compression-sc2.5?pyodideKernelEnv=" +
+  "https://lab.climet.eu/main/github/climet-eu/egu26-compression-sc2.5/HEAD?pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({
         EARTHKIT_DATA_CACHE_POLICY: "off",

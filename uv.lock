@@ -39,6 +39,7 @@ dev = [
     { name = "numcodecs-wasm-linear-quantize", specifier = "==0.5.0" },
     { name = "numcodecs-wasm-log", specifier = "==0.5.0" },
     { name = "numcodecs-wasm-pco", specifier = "==0.3.0" },
+    { name = "numcodecs-wasm-pressio", url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl" },
     { name = "numcodecs-wasm-qpet-sperr", specifier = "==0.2.2" },
     { name = "numcodecs-wasm-random-projection", specifier = "==0.4.0" },
     { name = "numcodecs-wasm-reinterpret", specifier = "==0.4.0" },
@@ -1980,6 +1981,20 @@ sdist = { url = "https://files.pythonhosted.org/packages/6c/1f/bcc495b77d5acfc10
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6d/20/bd4cc153d0aef52d5e0fb1b55baae0d0283e12cbe447a5f5defd5a27146f/numcodecs_wasm_pco-0.3.0-py3-none-any.whl", hash = "sha256:3ee55af7c68808e80a9acddf7904c6e63582fce5564a7ab72d953df554467a0a", size = 255381, upload-time = "2025-10-17T05:41:19.768Z" },
 ]
+
+[[package]]
+name = "numcodecs-wasm-pressio"
+version = "0.1.0"
+source = { url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl" }
+dependencies = [
+    { name = "numcodecs-wasm" },
+]
+wheels = [
+    { url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl", hash = "sha256:c41246e398280b2e059827cb79e3a59d330f82e9882f3205325bb86fb3924c06" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "numcodecs-wasm", specifier = "~=0.2.4" }]
 
 [[package]]
 name = "numcodecs-wasm-qpet-sperr"

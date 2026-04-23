@@ -15,7 +15,7 @@ const all_data_names = fs.readdirSync("data");
 console.log(
   `https://lab.climet.eu/${lab.version}/lab/index.html?fromURL=` +
     `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/compression.ipynb` +
-    "?pyodideKernelEnv=" +
+    "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({
         EARTHKIT_DATA_CACHE_POLICY: "off",

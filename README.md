@@ -45,7 +45,7 @@ Please note that compression in the Online Laboratory currently only works in re
 
 Licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>).
 
-The example datasets in the `data/` folder are licensed separately.
+The example datasets in the `data/` folder are licensed separately, please see the `LICENSE.txt` files in the respective subfolders.
 
 
 ## Funding

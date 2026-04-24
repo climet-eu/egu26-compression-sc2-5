@@ -27,38 +27,35 @@ const all_data_paths = fs
 
 console.log(
   `https://lab.climet.eu/${lab.version}/lab/index.html?fromURL=` +
-    `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/compression.ipynb` +
+    `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/00-compression.ipynb` +
     "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({
         EARTHKIT_DATA_CACHE_POLICY: "off",
         EARTHKIT_REGRID_CACHE_POLICY: "off",
         CLIMET_LAB_BOOTSTRAP_CODE: `\
-import warnings
-from pathlib import Path
-
 import pyodide_fs_mount_http
 
-
-def mount_data_files(*args, **kwargs):
-    if mount_data_files.mounted:
+def mount_data_files(*args, is_mounted=[False], **kwargs):
+    if is_mounted[0]:
         return
-    mount_data_files.mounted = True
+    is_mounted[0] = True
+
+    import warnings
+    from pathlib import Path
+
+    import pyodide_fs_mount_http
 
     data = Path("data")
 
     for folder, files in ${JSON.stringify(all_data_paths)}.items():
-        if data.joinpath(folder).exists():
-            continue
-
         try:
             pyodide_fs_mount_http.mount_http_files(data / folder, {
-                name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/heads/${repo.branch}/data/{name}"
+                name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/heads/${repo.branch}/data/{folder}/{name}"
                 for name in files
             })
         except Exception as err:
             warnings.warn(f"Failed to mount data files in {data / folder}: {err}")
-mount_data_files.mounted = False
 
 ip.events.register("pre_execute", mount_data_files)
 `,

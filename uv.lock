@@ -39,7 +39,7 @@ dev = [
     { name = "numcodecs-wasm-linear-quantize", specifier = "==0.5.0" },
     { name = "numcodecs-wasm-log", specifier = "==0.5.0" },
     { name = "numcodecs-wasm-pco", specifier = "==0.3.0" },
-    { name = "numcodecs-wasm-pressio", url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl" },
+    { name = "numcodecs-wasm-pressio", specifier = "==0.1.0b1" },
     { name = "numcodecs-wasm-qpet-sperr", specifier = "==0.2.2" },
     { name = "numcodecs-wasm-random-projection", specifier = "==0.4.0" },
     { name = "numcodecs-wasm-reinterpret", specifier = "==0.4.0" },
@@ -1984,17 +1984,15 @@ wheels = [
 
 [[package]]
 name = "numcodecs-wasm-pressio"
-version = "0.1.0"
-source = { url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl" }
+version = "0.1.0b1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numcodecs-wasm" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/8c/a3/1c0e9885b5fbadb5197eb940cea958d86f5f13b610854d79ba108e160029/numcodecs_wasm_pressio-0.1.0b1.tar.gz", hash = "sha256:b7eedaf3fc4464a72ec07b567559651f520f85838979b59cfb57cba60a8b382f", size = 1186331, upload-time = "2026-04-30T18:42:10.961Z" }
 wheels = [
-    { url = "https://gist.githubusercontent.com/juntyr/ad332c10c18ac5153178b8b54fffd3ee/raw/a142181686352bbd76e4c0f0f07e9e83859bb0d6/numcodecs_wasm_pressio-0.1.0-py3-none-any.whl", hash = "sha256:c41246e398280b2e059827cb79e3a59d330f82e9882f3205325bb86fb3924c06" },
+    { url = "https://files.pythonhosted.org/packages/4b/fc/070a91c07bfa8bb2d76e330c87496985845870d7882978b0ae6cb5f33d46/numcodecs_wasm_pressio-0.1.0b1-py3-none-any.whl", hash = "sha256:7da98e4963624e59f4868140b4969d6cadfc1c375db8ad16191416b1f280ad93", size = 1189594, upload-time = "2026-04-30T18:42:08.854Z" },
 ]
-
-[package.metadata]
-requires-dist = [{ name = "numcodecs-wasm", specifier = "~=0.2.4" }]
 
 [[package]]
 name = "numcodecs-wasm-qpet-sperr"

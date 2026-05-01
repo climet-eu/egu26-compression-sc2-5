@@ -47,6 +47,8 @@ Licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativ
 
 The example datasets in the `data/` folder are licensed separately, please see the `LICENSE.txt` files in the respective subfolders.
 
+The compressor pitch presentation slides in the `pitches/` folder are licensed separately.
+
 
 ## Funding
 

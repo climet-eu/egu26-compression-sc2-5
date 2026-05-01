@@ -20,12 +20,13 @@ dev = [
     { name = "h5py", specifier = "==3.16.0" },
     { name = "hdf5plugin", specifier = "==6.0.0" },
     { name = "jupyterlab", specifier = "~=4.5.0" },
+    { name = "jupyterlab-myst", specifier = "~=2.6.0" },
     { name = "matplotlib", specifier = "==3.10.8" },
     { name = "netcdf4", specifier = "==1.7.2" },
     { name = "numcodecs", specifier = "==0.15.1" },
     { name = "numcodecs-combinators", specifier = "==0.2.14" },
-    { name = "numcodecs-pw-ratio", specifier = "==0.2.0" },
-    { name = "numcodecs-replace", specifier = "==0.1.0" },
+    { name = "numcodecs-pw-ratio", specifier = "==0.2.1" },
+    { name = "numcodecs-replace", specifier = "==0.1.2" },
     { name = "numcodecs-safeguards", specifier = "==0.1.0b2" },
     { name = "numcodecs-wasm", specifier = "==0.2.4" },
     { name = "numcodecs-wasm-asinh", specifier = "==0.4.0" },
@@ -1258,6 +1259,18 @@ wheels = [
 ]
 
 [[package]]
+name = "jupyterlab-myst"
+version = "2.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server", marker = "sys_platform != 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/04/91/63e3c2c54c707050c9844563c810829a8834fecd0b6b2c3506c2d7dd6995/jupyterlab_myst-2.6.0.tar.gz", hash = "sha256:1502e776153a43588eeb26ce04fb20a0a401805e20edbc57090c9ac932bd42e0", size = 12941853, upload-time = "2025-12-14T20:59:30.685Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5c/70/f0563af672535bbecc96071ef1ade96f37433e68645a6ea45973dc07c915/jupyterlab_myst-2.6.0-py3-none-any.whl", hash = "sha256:9a0e0ffb318798998be91b7303ffca8a5f15c29bcf339c968c0c3edbc1926265", size = 2710158, upload-time = "2025-12-14T20:59:27.514Z" },
+]
+
+[[package]]
 name = "jupyterlab-pygments"
 version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1755,7 +1768,7 @@ wheels = [
 
 [[package]]
 name = "numcodecs-pw-ratio"
-version = "0.2.0"
+version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "leb128" },
@@ -1764,23 +1777,23 @@ dependencies = [
     { name = "numpy" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/21/38/0d346c0cee16b933660a8ed388d49fdada46371391f2f3a5cf81555baab4/numcodecs_pw_ratio-0.2.0.tar.gz", hash = "sha256:c1d9841bf4d8d3bfd9d0f5341fd69e2253a2a3ef87189e47d9ac4a61fbfdc30a", size = 14403, upload-time = "2026-02-20T06:50:28.373Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7b/eb/39153fa1b135beecf9d85e98e4a1ea69e8d76ce44e0158ad4fb25ca22258/numcodecs_pw_ratio-0.2.1.tar.gz", hash = "sha256:8bd01693c97b1d7bf5bbf2181aa990617cd5302a93e09734550283ad8930b061", size = 14516, upload-time = "2026-05-01T11:11:52.637Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/30/bee041b225b6e43c9cfe984022c7aceebb79b064ef79b52f08c58fcd886d/numcodecs_pw_ratio-0.2.0-py3-none-any.whl", hash = "sha256:71d53feb30debc563c89fbe2fb7054465d6e488efba1a7f79c0baef14ae45010", size = 12839, upload-time = "2026-02-20T06:50:29.577Z" },
+    { url = "https://files.pythonhosted.org/packages/f3/2b/70c9af4b6a864cef24ada65a4752032246f4b037f805422413452c124012/numcodecs_pw_ratio-0.2.1-py3-none-any.whl", hash = "sha256:15a091288efd31ffc74f3534cd5b8258ca36bd012c2a4f33053387b685b79da0", size = 12898, upload-time = "2026-05-01T11:11:51.527Z" },
 ]
 
 [[package]]
 name = "numcodecs-replace"
-version = "0.1.0"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numcodecs" },
     { name = "numpy" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/57/ab/3a73d49d5afeb751e4ce676069d76f236ffbc530bd1af0b7ee1652e083d2/numcodecs_replace-0.1.0.tar.gz", hash = "sha256:05361d941a57266b192936c4d5fa5ef14188d60efbe73065f1ec9356ed33fe37", size = 10847, upload-time = "2026-02-16T09:30:32.605Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/9f/5b1884782227e0eb64fec467194255360eb49fdb66d9d8c1fffb5afe8a8b/numcodecs_replace-0.1.2.tar.gz", hash = "sha256:798fd373840c4c4267b9327a6546a3b5075549fde76efb9037aae5b3159c372f", size = 11113, upload-time = "2026-05-01T11:36:23.925Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/58/be/6c5609ffdfb3be68aa917c05dbccae0acade8adf057f8bdd76df4841849e/numcodecs_replace-0.1.0-py3-none-any.whl", hash = "sha256:10fe2a74ea9e863023a356e59810513e807c0a9a903ccb72b2d065f4597f8912", size = 9535, upload-time = "2026-02-16T09:30:31.517Z" },
+    { url = "https://files.pythonhosted.org/packages/97/b9/cc4c4a0421abc92f0ffe31e0781e279a0f705a4cb12d02bf7797cae5209b/numcodecs_replace-0.1.2-py3-none-any.whl", hash = "sha256:32fb2a2fc3e63bf4db8eb8c53b990bf35a8ee376450d785ce2d4f690718bb505", size = 9645, upload-time = "2026-05-01T11:36:24.686Z" },
 ]
 
 [[package]]

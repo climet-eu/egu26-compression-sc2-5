@@ -27,7 +27,7 @@ const all_data_paths = fs
 
 console.log(
   `https://lab.climet.eu/${lab.version}/lab/index.html?fromURL=` +
-    `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/00-compression.ipynb` +
+    `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/01-compression.ipynb` +
     "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({

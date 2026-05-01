@@ -70,6 +70,7 @@ def quickplot(
         (False, True): "max",
         (True, True): "both",
     }[(extend_left, extend_right)]
+    style._kwargs["extend"] = extend
     style._legend_kwargs["extend"] = extend
 
     # extract datetime and provide it for plotting labels

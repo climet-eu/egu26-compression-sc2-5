@@ -11,7 +11,7 @@ resolution-markers = [
 [manifest.dependency-groups]
 dev = [
     { name = "cfgrib", specifier = "==0.9.15.1" },
-    { name = "compression-safeguards", specifier = "==1.0.0b2" },
+    { name = "compression-safeguards", specifier = "==1.0.0b3" },
     { name = "dask", specifier = "==2026.3.0" },
     { name = "earthkit-data", specifier = "==0.19.3" },
     { name = "earthkit-plots", specifier = "==0.6.1" },
@@ -24,10 +24,10 @@ dev = [
     { name = "matplotlib", specifier = "==3.10.8" },
     { name = "netcdf4", specifier = "==1.7.2" },
     { name = "numcodecs", specifier = "==0.15.1" },
-    { name = "numcodecs-combinators", specifier = "==0.2.14" },
+    { name = "numcodecs-combinators", specifier = "==0.2.15" },
     { name = "numcodecs-pw-ratio", specifier = "==0.2.1" },
     { name = "numcodecs-replace", specifier = "==0.1.2" },
-    { name = "numcodecs-safeguards", specifier = "==0.1.0b2" },
+    { name = "numcodecs-safeguards", specifier = "==0.1.0b3" },
     { name = "numcodecs-wasm", specifier = "==0.2.4" },
     { name = "numcodecs-wasm-asinh", specifier = "==0.4.0" },
     { name = "numcodecs-wasm-bit-round", specifier = "==0.4.0" },
@@ -58,7 +58,7 @@ dev = [
     { name = "numpy-quaddtype", specifier = "==1.0.0" },
     { name = "scipy", specifier = "==1.17.0" },
     { name = "xarray", specifier = "==2026.2.0" },
-    { name = "xarray-safeguards", specifier = "==0.1.0b2" },
+    { name = "xarray-safeguards", specifier = "==0.1.0b3" },
     { name = "zarr", specifier = "==3.1.5" },
     { name = "zarr-any-numcodecs", specifier = "==0.1.3" },
 ]
@@ -471,7 +471,7 @@ wheels = [
 
 [[package]]
 name = "compression-safeguards"
-version = "1.0.0b2"
+version = "1.0.0b3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
@@ -480,9 +480,9 @@ dependencies = [
     { name = "sly" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/1e/dc5c20adbd18a8e74b9b332304c08f558ab74d602650aefc52558ccd0102/compression_safeguards-1.0.0b2.tar.gz", hash = "sha256:2913532e0577962473141acc221666cedd0681d37a30d161f101e1493c195941", size = 155299, upload-time = "2026-02-02T09:18:40.287Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/15/6592bac8afd72dd93076209f89552df60a8c8caa9d7d08a1e7e59265e8ca/compression_safeguards-1.0.0b3.tar.gz", hash = "sha256:1d577abef9ad8aa8b2d090d5ca2f5dcd0b914542a2670b20b220e3efcff61d9d", size = 160739, upload-time = "2026-05-01T21:15:35.427Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3a/35/de63703863de200e8ec5623b8070dcbf278b607a41b9acdd3e6119169e62/compression_safeguards-1.0.0b2-py3-none-any.whl", hash = "sha256:8b356bbff986b5128f2459ac791d6381cb425e0981aed3db77a5b21d2e4cb8f6", size = 188206, upload-time = "2026-02-02T09:18:33.01Z" },
+    { url = "https://files.pythonhosted.org/packages/28/d7/4149d8c588da23587fd8f25e6178dfcb86f98535868c411e0e60bab5d1bf/compression_safeguards-1.0.0b3-py3-none-any.whl", hash = "sha256:15f7be666057a4eac96f0ccaa5d66e39939fa556087b466534b573cc39b1bcb6", size = 197236, upload-time = "2026-05-01T21:15:30.784Z" },
 ]
 
 [[package]]
@@ -1724,7 +1724,7 @@ wheels = [
 
 [[package]]
 name = "numcodecs-combinators"
-version = "0.2.14"
+version = "0.2.15"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "leb128" },
@@ -1732,9 +1732,9 @@ dependencies = [
     { name = "numpy" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8b/0b/81eaf537d106d6afda46f66865cc5b9a89edb853a94b2506d316e32ef613/numcodecs_combinators-0.2.14.tar.gz", hash = "sha256:0faaed424a0314df7074ceb129f8c9d4bbcb51b457bd7b9d984323552e978289", size = 15208, upload-time = "2026-02-25T06:58:10.317Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/49/33/8b9bdd4f3893e56735277bf82301fdb9ce67b3436a5b6591ab59c494fadb/numcodecs_combinators-0.2.15.tar.gz", hash = "sha256:79f4c7e994b46c582685683da99c7d1a79273c70469bd8cbbe84a9b0db6e61f6", size = 15329, upload-time = "2026-05-01T15:18:07.116Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/b6/b1dc2cd96f7e2ff189d2863596e04c8cf8c368d2081834cd2a380094f966/numcodecs_combinators-0.2.14-py3-none-any.whl", hash = "sha256:acd74a5dd2ae88267ca3a372789695bb1fbfe8d2c7371777acd163394eca8bfd", size = 17336, upload-time = "2026-02-25T06:58:10.944Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/27/649edd7908663457bb84c073fb3c91f66a83f1692cc6bb076b60b7a5779d/numcodecs_combinators-0.2.15-py3-none-any.whl", hash = "sha256:ec268db05ccf97034adb4ad3954a9cbf5df6dc8f47ff6f8b1b7e59e71df352ee", size = 17387, upload-time = "2026-05-01T15:18:07.828Z" },
 ]
 
 [[package]]
@@ -1798,7 +1798,7 @@ wheels = [
 
 [[package]]
 name = "numcodecs-safeguards"
-version = "0.1.0b2"
+version = "0.1.0b3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "compression-safeguards" },
@@ -1814,9 +1814,9 @@ dependencies = [
     { name = "semver" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c7/9e/2c2a4e0e2a178d5454d93089b9d2f048b012b5ba25eae654bf8dcae0c127/numcodecs_safeguards-0.1.0b2.tar.gz", hash = "sha256:d41a3dcfd1719959c725be81aea0906da9de20ff07990175576f56bbf28fd745", size = 49493, upload-time = "2026-02-02T09:18:41.361Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/61/3d/438c26cf92955b6938c118b7d687f6ccb82d79ad2ddf7281e63212d3db24/numcodecs_safeguards-0.1.0b3.tar.gz", hash = "sha256:bf3c2e978c46c2e0595f925b9af3b1b6f55c5abf3379887a88a05f647677f3ca", size = 49981, upload-time = "2026-05-01T21:15:36.582Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/78/65/7ee78963741e5820852fb70513a106f796751d998fd35eda13168b991b12/numcodecs_safeguards-0.1.0b2-py3-none-any.whl", hash = "sha256:d7473ebe1efeba1e272a4387ec826176c5d30e5510bc5fc428a86ebde3de3f80", size = 36068, upload-time = "2026-02-02T09:18:36.963Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/9d/250a1b720c5af38b08dbb605c33aa8ea902f6611fe56d1f1238c811800d8/numcodecs_safeguards-0.1.0b3-py3-none-any.whl", hash = "sha256:b430b0151745630737e71b51e5d4b85a80ea5d3f09bd502b8a96883915a77352", size = 36381, upload-time = "2026-05-01T21:15:32.613Z" },
 ]
 
 [[package]]
@@ -3251,7 +3251,7 @@ wheels = [
 
 [[package]]
 name = "xarray-safeguards"
-version = "0.1.0b2"
+version = "0.1.0b3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "compression-safeguards" },
@@ -3260,9 +3260,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "xarray" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/ff/d1759dcfbedba662c5c19729c4422dadf4851204475df099f052a804bb2b/xarray_safeguards-0.1.0b2.tar.gz", hash = "sha256:7f955601dfc34cf063e27bc28d59baefaedeeecbfd66a361173c5b222b0eb063", size = 47216, upload-time = "2026-02-02T09:18:42.423Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/9f/b79037f8f2eed1220107494ff464d126ada0e0032c806c97a6779481c6e6/xarray_safeguards-0.1.0b3.tar.gz", hash = "sha256:64b37add0b66b25a328b28ab97d0d8b6af7647de11b1b6d04df580bd1d6b8e1c", size = 47843, upload-time = "2026-05-01T21:15:37.886Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2c/37/936dfe5b4e53e015271ba6320a09482afa8ed3c048de9e14d3fed14fb157/xarray_safeguards-0.1.0b2-py3-none-any.whl", hash = "sha256:6527a4127a0256d7188427b714af31969f20fc9c50f2324a68f344e59c48853d", size = 31905, upload-time = "2026-02-02T09:18:38.97Z" },
+    { url = "https://files.pythonhosted.org/packages/78/75/5eff68301f943a2d109d27c84388ad81a1f6f18d8e0ba63e857b9cbe86a3/xarray_safeguards-0.1.0b3-py3-none-any.whl", hash = "sha256:f03ba8591cdd0209dabe1c934271c1dab9af01e3c23585c33137b400dc0ca294", size = 32363, upload-time = "2026-05-01T21:15:34.04Z" },
 ]
 
 [[package]]

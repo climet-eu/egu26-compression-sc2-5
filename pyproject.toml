@@ -1,7 +1,7 @@
 [dependency-groups]
 dev = [
     "cfgrib==0.9.15.1",
-    "compression-safeguards==1.0.0b2",
+    "compression-safeguards==1.0.0b3",
     "dask==2026.3.0",
     "earthkit-data==0.19.3",
     "earthkit-plots==0.6.1",
@@ -13,10 +13,10 @@ dev = [
     "jupyterlab-myst~=2.6.0",
     "netcdf4==1.7.2",
     "numcodecs==0.15.1",
-    "numcodecs-combinators==0.2.14",
+    "numcodecs-combinators==0.2.15",
     "numcodecs-pw-ratio==0.2.1",
     "numcodecs-replace==0.1.2",
-    "numcodecs-safeguards==0.1.0b2",
+    "numcodecs-safeguards==0.1.0b3",
     "numcodecs_wasm==0.2.4",
     "numcodecs_wasm_asinh==0.4.0",
     "numcodecs_wasm_bit_round==0.4.0",
@@ -48,7 +48,7 @@ dev = [
     "matplotlib==3.10.8",
     "scipy==1.17.0",
     "xarray==2026.2.0",
-    "xarray-safeguards==0.1.0b2",
+    "xarray-safeguards==0.1.0b3",
     "zarr==3.1.5",
     "zarr-any-numcodecs==0.1.3",
 ]

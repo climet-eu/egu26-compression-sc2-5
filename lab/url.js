@@ -25,9 +25,28 @@ const all_data_paths = fs
     {},
   );
 
+const all_files = [
+  "quickplot.py",
+  "01-compression.ipynb",
+  "02-datasets.ipynb",
+  "03a-bit-round.ipynb",
+  "03b-zfp.ipynb",
+  "03c-sperr.ipynb",
+  "03d-ebcc.ipynb",
+  "03e-lc.ipynb",
+  "03f-sz3.ipynb",
+  "03g-pressio.ipynb",
+  "03h-safeguards.ipynb",
+];
+
 console.log(
-  `https://lab.climet.eu/${lab.version}/lab/index.html?fromURL=` +
-    `https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/01-compression.ipynb` +
+  `https://lab.climet.eu/${lab.version}/lab/index.html?` +
+    all_files
+      .map(
+        (name) =>
+          `fromURL=https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/${name}`,
+      )
+      .join("&") +
     "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({

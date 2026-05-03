@@ -45,6 +45,8 @@ Please note that compression in the Online Laboratory currently only works in re
 
 Licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>).
 
+This product includes software produced by UChicago Argonne, LLC under Contract No. DE-AC02-06CH11357 with the Department of Energy.
+
 The example datasets in the `data/` folder are licensed separately, please see the `LICENSE.txt` files in the respective subfolders.
 
 The compressor pitch presentation slides in the `pitches/` folder are licensed separately:

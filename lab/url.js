@@ -37,6 +37,9 @@ const all_files = [
   "03f-sz3.ipynb",
   "03g-pressio.ipynb",
   "03h-safeguards.ipynb",
+  "04a-nan-challenge.ipynb",
+  "04b-eb-rel-challenge.ipynb",
+  "04c-gradient-challenge.ipynb",
 ];
 
 console.log(

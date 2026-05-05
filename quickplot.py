@@ -12,6 +12,7 @@ def quickplot(
     /,
     chart=None,
     *,
+    method: str = "pcolormesh",
     vrange: None | tuple[float, float] = None,
     error: bool = False,
     title: str = "{default_title}",
@@ -95,7 +96,19 @@ def quickplot(
 
     create_chart = chart is None
     chart = earthkit.plots.Map() if chart is None else chart
-    chart.pcolormesh(data, style=style, **kwargs)
+
+    chart.ax.fill_between(
+        [0, 1],
+        [1, 1],
+        hatch="X",
+        edgecolor="magenta" if error else "white",
+        facecolor="lavenderblush" if error else "lightgrey",
+        transform=chart.ax.transAxes,
+        zorder=-999,
+    )
+
+    getattr(chart, method)(data, style=style, **kwargs)
+
     chart.coastlines()
     chart.gridlines()
     chart.legend()

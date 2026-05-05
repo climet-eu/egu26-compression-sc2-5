@@ -9,6 +9,7 @@ dev = [
     "earthkit-utils==0.3.0",
     "h5py==3.16.0",
     "hdf5plugin==6.0.0",
+    "humanize==4.15.0",
     "jupyterlab~=4.5.0",
     "jupyterlab-myst~=2.6.0",
     "netcdf4==1.7.2",

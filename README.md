@@ -51,6 +51,7 @@ The example datasets in the `data/` folder are licensed separately, please see t
 
 The compressor pitch presentation slides in the `pitches/` folder are licensed separately:
 
+- `pitches/e-lc.pdf` is licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>).
 - `pitches/f-sz.pdf` is licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>). (c) Argonne National Laboratory 08.05.2026.
 - `pitches/g-pressio.pdf` is licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>). (c) Argonne National Laboratory 08.05.2026.
 - `pitches/h-safeguards.pdf` is licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>).

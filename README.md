@@ -48,12 +48,12 @@ Please note that compression in the Online Laboratory currently only works in re
 - Compression: Reducing the number of bits needed to store some data.
 - Compressor: A codec that implements compression and decompression.
 - Filter: A codec that transforms the data to make it more easily compressible without necessarily reducing its byte size directly itself.
-- IEEE 754 Floating Point Number: A number with dynamic precision $(-1)^{s} \cdot 2^{e-b} \cdot 1.m$ that is represented by its sign $s$, its binary exponent $e$ with bias $b$, and a mantissa $m$ that encodes the fractional multiplier.
+- IEEE 754 Floating Point Number: A number with dynamic precision $(-1)^{s} \cdot 2^{e-b} \cdot 1.m\ldots$ that is represented by its sign $s$, its binary exponent $e$ with bias $b$, and a mantissa $m\ldots$ that encodes the binary fractional multiplier.
 - Lossless Compression: Compression that reproduces the original bits exactly during decompression.
 - Lossy Compression: Compression that may only produce an approximation of the original data during decompression.
 - Pointwise Absolute Error Bound: $|\hat{x} - x| <= \epsilon_{abs}$ for the original data $x$ and decompressed data $\hat{x}$
 - Pointwise Relative Error Bound: $|\hat{x} - x| <= (|x| \cdot \epsilon_{rel})$ for the original data $x$ and decompressed data $\hat{x}$
-- Range-Relative Error Bound: $|\hat{x} - x| <= ((\max{X} - \min{X}) \cdot \epsilon_{range-rel})$ for the original data $x$ and decompressed data $\hat{x}$
+- Range-Relative Error Bound: $|\hat{x} - x| <= ((\max{(X)} - \min{(X)}) \cdot \epsilon_{range\_rel})$ for the original data $x$ and decompressed data $\hat{x}$
 - Quantity of Interest: Function $f(x)$ that is computed over the data $x$
 
 ## License

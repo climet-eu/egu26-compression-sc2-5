@@ -7,5 +7,6 @@ data/OpenIFS/OpenIFS_pl_regridded_q_025deg_steps_114_120_levels_100_1000.nc filt
 data/OpenIFS/OpenIFS_sfc_regridded_t_025deg_steps_114_120.nc filter=lfs diff=lfs merge=lfs -text
 data/OpenIFS/OpenIFS_sfc_regridded_tp_025deg_steps_114_120.nc filter=lfs diff=lfs merge=lfs -text
 data/hplp/hplp_ml_regridded_q_025deg_levels_10_137_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text
+data/hplp/hplp_sfc_regridded_t_025deg_levels_steps_204_216_228_240.nc filter=lfs diff=lfs merge=lfs -text
 data/hplp/hplp_sfc_regridded_t_025deg_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text
 data/hplp/hplp_sfc_regridded_tp_025deg_steps_228_240.nc filter=lfs diff=lfs merge=lfs -text

@@ -25,26 +25,15 @@ const all_data_paths = fs
     {},
   );
 
-const all_files = [
-  "quickplot.py",
-  "01-compression.ipynb",
-  "02-datasets.ipynb",
-  "03a-bit-round.ipynb",
-  "03b-zfp.ipynb",
-  "03c-sperr.ipynb",
-  "03d-ebcc.ipynb",
-  "03e-lc.ipynb",
-  "03f-sz3.ipynb",
-  "03g-pressio.ipynb",
-  "03h-safeguards.ipynb",
-  "04a-nan-challenge.ipynb",
-  "04b-eb-rel-challenge.ipynb",
-  "04c-gradient-challenge.ipynb",
-];
+const code_extensions = [".ipynb", ".py"];
+const all_code_paths = fs
+  .readdirSync(".")
+  .toSorted()
+  .filter((name) => code_extensions.includes(path.extname(name)));
 
 console.log(
   `https://lab.climet.eu/${lab.version}/lab/index.html?` +
-    all_files
+    all_code_paths
       .map(
         (name) =>
           `fromURL=https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/${name}`,

@@ -1,0 +1,39 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  EGU26 SC2.5: Data compression and reduction for Earth
+  System Sciences datasets in practice
+message: >-
+  If you use these materials, please cite them using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Juniper
+    family-names: Tyree
+    email: juniper.tyree@helsinki.fi
+    affiliation: University of Helsinki
+    orcid: 'https://orcid.org/0000-0002-7923-9609'
+  - given-names: Sara
+    family-names: Faghih-Naini
+    orcid: 'https://orcid.org/0009-0009-1880-2822'
+    affiliation: ECMWF
+    email: sara.faghihnaini@ecmwf.int
+  - given-names: Clément
+    family-names: Bouvier
+    affiliation: University of Helsinki
+    orcid: 'https://orcid.org/0000-0003-2920-7585'
+    email: clement.bouvier@helsinki.fi
+identifiers:
+  - type: url
+    value: >-
+      https://meetingorganizer.copernicus.org/EGU26/session/57884
+    description: EGU26 SC2.5
+repository-code: 'https://github.com/climet-eu/egu26-compression-sc2-5'
+keywords:
+  - egu
+  - compression
+  - earth system
+  - datasets
+license: CC-BY-4.0

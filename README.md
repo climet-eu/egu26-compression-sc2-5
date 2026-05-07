@@ -51,6 +51,7 @@ Please note that compression in the Online Laboratory currently only works in re
 - IEEE 754 Floating Point Number: A number with dynamic precision $(-1)^{s} \cdot 2^{e-b} \cdot 1.m\ldots$ that is represented by its sign $s$, its binary exponent $e$ with bias $b$, and a mantissa $m\ldots$ that encodes the binary fractional multiplier.
 - Lossless Compression: Compression that reproduces the original bits exactly during decompression.
 - Lossy Compression: Compression that may only produce an approximation of the original data during decompression.
+- Meta-Compressor: A compressor that wraps one or more other compressors and transforms the data they work with. Meta-compressors can be used to combine multiple compressors or to provide extra functionality on top of existing compressors.
 - Pointwise Absolute Error Bound: $|\hat{x} - x| <= \epsilon_{abs}$ for the original data $x$ and decompressed data $\hat{x}$
 - Pointwise Relative Error Bound: $|\hat{x} - x| <= (|x| \cdot \epsilon_{rel})$ for the original data $x$ and decompressed data $\hat{x}$
 - Range-Relative Error Bound: $|\hat{x} - x| <= ((\max{(X)} - \min{(X)}) \cdot \epsilon_{range\_rel})$ for the original data $x$ and decompressed data $\hat{x}$

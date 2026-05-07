@@ -1,6 +1,8 @@
 # EGU26 SC2.5: Data compression and reduction for Earth System Sciences datasets in practice
 
-See you at [EGU26 Short Course SC2.5](https://meetingorganizer.copernicus.org/EGU26/session/57884) on Friday, 08 May, 14:00–15:45 (CEST) in Room -2.82 or remotely.
+See you at the [EGU26 Short Course SC2.5][egu26-sc25] on Friday, 08 May, 14:00–15:45 (CEST) in Room -2.82 or [remotely][egu26-sc25].
+
+[egu26-sc25]: https://meetingorganizer.copernicus.org/EGU26/session/57884
 
 
 ## Getting Started

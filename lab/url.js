@@ -42,9 +42,8 @@ console.log(
     "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({
-        EARTHKIT_DATA_CACHE_POLICY: "off",
-        EARTHKIT_REGRID_CACHE_POLICY: "off",
-        CLIMET_LAB_BOOTSTRAP_CODE: `\
+        "$override": {
+          CLIMET_LAB_BOOTSTRAP_CODE: `\
 import pyodide_fs_mount_http
 
 def mount_data_files(*args, is_mounted=[False], **kwargs):
@@ -70,6 +69,7 @@ def mount_data_files(*args, is_mounted=[False], **kwargs):
 
 ip.events.register("pre_execute", mount_data_files)
 `,
+        }
       }),
     ),
 );

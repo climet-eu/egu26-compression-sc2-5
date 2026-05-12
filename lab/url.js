@@ -2,13 +2,13 @@ const fs = require("fs");
 const path = require("path");
 
 const lab = {
-  version: "main",
+  version: "v0.4.0",
 };
 
 const repo = {
   user: "climet-eu",
   name: "egu26-compression-sc2-5",
-  branch: "main",
+  tag: "1.0.0",
 };
 
 const all_data_paths = fs
@@ -36,7 +36,7 @@ console.log(
     all_code_paths
       .map(
         (name) =>
-          `fromURL=https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/heads/${repo.branch}/${name}`,
+          `fromURL=https://raw.githubusercontent.com/${repo.user}/${repo.name}/refs/tags/${repo.tag}/${name}`,
       )
       .join("&") +
     "&pyodideKernelEnv=" +

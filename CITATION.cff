@@ -26,6 +26,9 @@ authors:
     orcid: 'https://orcid.org/0000-0003-2920-7585'
     email: clement.bouvier@helsinki.fi
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20136415
+    description: Repository
   - type: url
     value: >-
       https://meetingorganizer.copernicus.org/EGU26/session/57884

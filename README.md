@@ -1,5 +1,6 @@
 # EGU26 SC2.5: Data compression and reduction for Earth System Sciences datasets in practice
 
+[![image](https://zenodo.org/badge/DOI/10.5281/zenodo.20136415.svg)](https://doi.org/10.5281/zenodo.20136415)
 [![image](https://zenodo.org/badge/DOI/10.5281/zenodo.20136040.svg)](https://doi.org/10.5281/zenodo.20136040)
 
 See you at the [EGU26 Short Course SC2.5][egu26-sc25] on Friday, 08 May, 14:00–15:45 (CEST) in Room -2.82 or [remotely][egu26-sc25].

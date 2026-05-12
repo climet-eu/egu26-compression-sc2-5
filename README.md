@@ -61,6 +61,12 @@ Please note that compression in the Online Laboratory currently only works in re
 - Range-Relative Error Bound: $|\hat{x} - x| <= ((\max{(X)} - \min{(X)}) \cdot \epsilon_{range\_rel})$ for the original data $x$ and decompressed data $\hat{x}$
 - Quantity of Interest: Function $f(x)$ that is computed over the data $x$
 
+
+## Compression Challenges
+
+The notebooks also include some compression challenges, in which you are challenged to find the best-performing compressor for a specific task. There is also a [leaderboard](https://github.com/climet-eu/egu26-compression-sc2-5/issues/3) of all submitted entries.
+
+
 ## License
 
 Licensed under the CC BY 4.0 license ([LICENSE](LICENSE.txt) or <https://creativecommons.org/licenses/by/4.0/>).

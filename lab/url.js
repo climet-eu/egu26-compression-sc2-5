@@ -42,7 +42,7 @@ console.log(
     "&pyodideKernelEnv=" +
     encodeURIComponent(
       JSON.stringify({
-        "$override": {
+        $override: {
           CLIMET_LAB_BOOTSTRAP_CODE: `\
 import pyodide_fs_mount_http
 
@@ -61,7 +61,7 @@ def mount_data_files(*args, is_mounted=[False], **kwargs):
     for folder, files in ${JSON.stringify(all_data_paths)}.items():
         try:
             pyodide_fs_mount_http.mount_http_files(data / folder, {
-                name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/heads/${repo.branch}/data/{folder}/{name}"
+                name: f"https://media.githubusercontent.com/media/${repo.user}/${repo.name}/refs/tags/${repo.tag}/data/{folder}/{name}"
                 for name in files
             })
         except Exception as err:
@@ -69,7 +69,7 @@ def mount_data_files(*args, is_mounted=[False], **kwargs):
 
 ip.events.register("pre_execute", mount_data_files)
 `,
-        }
+        },
       }),
     ),
 );

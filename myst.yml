@@ -1,0 +1,60 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 7187ab5f-4836-4ea7-9940-7aca31193b58
+  title: EGU26 SC2.5
+  description: Data compression and reduction for Earth System Sciences datasets in practice
+  keywords:
+    - compression
+    - datasets
+    - egu
+    - earth-system
+  license: CC-BY-4.0
+  authors:
+    - name: Juniper Tyree
+      orcid: 0000-0002-7923-9609
+      affiliations:
+        - name: University of Helsinki
+          ror: 040af2s02
+      github: juntyr
+    - name: Sara Faghih-Naini
+      orcid: 0009-0009-1880-2822
+      affiliations:
+        - name: European Centre for Medium-Range Weather Forecasts
+          ror: 014w0fd65
+      github: SF-N
+    - name: Clément Bouvier
+      orcid: 0000-0003-2920-7585
+      affiliations:
+        - name: University of Helsinki
+          ror: 040af2s02
+      github: clement-bouvier
+
+  github: https://github.com/climet-eu/egu26-compression-sc2.5
+  toc:
+    - file: README.md
+    - title: Getting Started
+      children:
+        - file: 01-compression.ipynb
+        - file: 02-datasets.ipynb
+    - title: Compressor Overviews
+      children:
+        - file: 03a-bit-round.ipynb
+        - file: 03b-zfp.ipynb
+        - file: 03c-sperr.ipynb
+        - file: 03d-ebcc.ipynb
+        - file: 03e-lc.ipynb
+        - file: 03f-sz3.ipynb
+        - file: 03g-pressio.ipynb
+        - file: 03h-safeguards.ipynb
+    - title: Compression Challenges
+      children:
+        - file: 04a-nan-challenge.ipynb
+        - file: 04b-eb-rel-challenge.ipynb
+        - file: 04c-gradient-challenge.ipynb
+
+site:
+  template: book-theme
+  options:
+    favicon: static/favicons/favicon.ico
+    logo: static/favicons/esiwace.svg

@@ -1,7 +1,13 @@
 # EGU26 SC2.5: Data compression and reduction for Earth System Sciences datasets in practice
 
-[![image](https://zenodo.org/badge/DOI/10.5281/zenodo.20136415.svg)](https://doi.org/10.5281/zenodo.20136415)
-[![image](https://zenodo.org/badge/DOI/10.5281/zenodo.20136040.svg)](https://doi.org/10.5281/zenodo.20136040)
+| [![materials-badge]][materials-url] | [![slides-badge]][slides-url] |
+|:-:|:-:|
+
+[materials-badge]: https://zenodo.org/badge/DOI/10.5281/zenodo.20136415.svg
+[slides-badge]: https://zenodo.org/badge/DOI/10.5281/zenodo.20136040.svg
+
+[materials-url]: https://doi.org/10.5281/zenodo.20136415
+[slides-url]: https://doi.org/10.5281/zenodo.20136040
 
 See you at the [EGU26 Short Course SC2.5][egu26-sc25] on Friday, 08 May, 14:00â€“15:45 (CEST) in Room -2.82 or [remotely][egu26-sc25].
 
@@ -9,6 +15,8 @@ See you at the [EGU26 Short Course SC2.5][egu26-sc25] on Friday, 08 May, 14:00â€
 
 
 ## Getting Started
+
+You can find the short course introduction slides in [00-introduction.pdf](00-introduction.pdf).
 
 ### (a) Local installation
 
@@ -48,19 +56,44 @@ Please note that compression in the Online Laboratory currently only works in re
 
 ## Glossary
 
-- Bit Pattern: The bits that make up a number, e.g. the 32 bits for a single-precision floating-point number.
-- Codec: An algorithm that transforms the data from one representation to another (encoding) and back (decoding).
-- Compression: Reducing the number of bits needed to store some data.
-- Compressor: A codec that implements compression and decompression.
-- Filter: A codec that transforms the data to make it more easily compressible without necessarily reducing its byte size directly itself.
-- IEEE 754 Floating Point Number: A number with dynamic precision $(-1)^{s} \cdot 2^{e-b} \cdot 1.m\ldots$ that is represented by its sign $s$, its binary exponent $e$ with bias $b$, and a mantissa $m\ldots$ that encodes the binary fractional multiplier.
-- Lossless Compression: Compression that reproduces the original bits exactly during decompression.
-- Lossy Compression: Compression that may only produce an approximation of the original data during decompression.
-- Meta-Compressor: A compressor that wraps one or more other compressors and transforms the data they work with. Meta-compressors can be used to combine multiple compressors or to provide extra functionality on top of existing compressors.
-- Pointwise Absolute Error Bound: $|\hat{x} - x| <= \epsilon_{abs}$ for the original data $x$ and decompressed data $\hat{x}$
-- Pointwise Relative Error Bound: $|\hat{x} - x| <= (|x| \cdot \epsilon_{rel})$ for the original data $x$ and decompressed data $\hat{x}$
-- Range-Relative Error Bound: $|\hat{x} - x| <= ((\max{(X)} - \min{(X)}) \cdot \epsilon_{range\_rel})$ for the original data $x$ and decompressed data $\hat{x}$
-- Quantity of Interest: Function $f(x)$ that is computed over the data $x$
+Bit Pattern
+: The bits that make up a number, e.g. the 32 bits for a single-precision floating-point number.
+
+Codec
+: An algorithm that transforms the data from one representation to another (encoding) and back (decoding).
+
+Compression
+: Reducing the number of bits needed to store some data.
+
+Compressor
+: A codec that implements compression and decompression.
+
+Filter
+: A codec that transforms the data to make it more easily compressible without necessarily reducing its byte size directly itself.
+
+IEEE 754 Floating Point Number
+: A number with dynamic precision $(-1)^{s} \cdot 2^{e-b} \cdot 1.m\ldots$ that is represented by its sign $s$, its binary exponent $e$ with bias $b$, and a mantissa $m\ldots$ that encodes the binary fractional multiplier.
+
+Lossless Compression
+: Compression that reproduces the original bits exactly during decompression.
+
+Lossy Compression
+: Compression that may only produce an approximation of the original data during decompression.
+
+Meta-Compressor
+: A compressor that wraps one or more other compressors and transforms the data they work with. Meta-compressors can be used to combine multiple compressors or to provide extra functionality on top of existing compressors.
+
+Pointwise Absolute Error Bound
+: $|\hat{x} - x| <= \epsilon_{abs}$ for the original data $x$ and decompressed data $\hat{x}$
+
+Pointwise Relative Error Bound
+: $|\hat{x} - x| <= (|x| \cdot \epsilon_{rel})$ for the original data $x$ and decompressed data $\hat{x}$
+
+Range-Relative Error Bound
+: $|\hat{x} - x| <= ((\max{(X)} - \min{(X)}) \cdot \epsilon_{range\_rel})$ for the original data $x$ and decompressed data $\hat{x}$
+
+Quantity of Interest
+: Function $f(x)$ that is computed over the data $x$
 
 
 ## Compression Challenges

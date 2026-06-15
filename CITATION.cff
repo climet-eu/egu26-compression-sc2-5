@@ -6,8 +6,8 @@ title: >-
   EGU26 SC2.5: Data compression and reduction for Earth
   System Sciences datasets in practice
 message: >-
-  If you use these materials, please cite them using the
-  metadata from this file.
+  If you use this software, please cite it using the
+  metadata from the CITATIONS.cff file.
 type: software
 authors:
   - given-names: Juniper
